@@ -6,7 +6,8 @@ TARGET = main.exe
 SRC = src/main.c \
       src/inventario.c \
       src/recursos.c \
-      src/menus.c
+      src/menus.c \
+      src/entrada.c
 
 $(TARGET): $(SRC)
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)

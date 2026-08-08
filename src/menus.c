@@ -3,6 +3,7 @@
 #include "menus.h"
 #include "cores.h"
 #include "recursos.h"
+#include "entrada.h"
 
 /* FERREIRO */
 void menu_ferreiro(inventario *jogador)
@@ -22,7 +23,7 @@ void menu_ferreiro(inventario *jogador)
         printf("\n0 - Voltar");
         printf("\n\nEscolha: ");
 
-        scanf("%d", &opcao);
+        opcao = ler_inteiro();
 
         switch (opcao)
         {
@@ -103,7 +104,7 @@ void menu_biblioteca(inventario *jogador)
         printf("\n0 - Voltar");
         printf("\n\nEscolha: ");
 
-        scanf("%d", &opcao);
+        opcao = ler_inteiro();
 
         switch (opcao)
         {
@@ -184,7 +185,7 @@ void menu_principal(inventario *jogador)
         printf("\n0 - Sair");
         printf("\n\nEscolha: ");
 
-        scanf("%d", &opcao);
+        opcao = ler_inteiro();
 
         switch (opcao)
         {

@@ -6,6 +6,7 @@
 #include "cores.h"
 #include "recursos.h"
 #include "menus.h"
+#include "entrada.h"
 
 /* MAIN */
 int main()
@@ -28,13 +29,13 @@ int main()
 	printf(RESET);
 
 	printf("\nEscolha suas esmeraldas iniciais: ");
-	scanf("%d", &jogador.esmeraldas);
+	jogador.esmeraldas = ler_inteiro_nao_negativo();
 
 	printf("Escolha seus ferros iniciais: ");
-	scanf("%d", &jogador.ferros);
+	jogador.ferros = ler_inteiro_nao_negativo();
 
 	printf("Escolha seus papeis iniciais: ");
-	scanf("%d", &jogador.papeis);
+	jogador.papeis = ler_inteiro_nao_negativo();
 
 	jogador.livro_mending = 0;
 	jogador.espada_diamante = 0;
